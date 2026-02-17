@@ -1,10 +1,9 @@
-# Simple Hacker News Emacs Client
+# Hacker News Modern Emacs Client
 
-[![Build](https://github.com/clarete/hackernews.el/actions/workflows/build.yml/badge.svg)](https://github.com/clarete/hackernews.el/actions/workflows/build.yml)
-[![MELPA](https://melpa.org/packages/hackernews-badge.svg)](https://melpa.org/#/hackernews)
-[![MELPA Stable](https://stable.melpa.org/packages/hackernews-badge.svg)](https://stable.melpa.org/#/hackernews)
+Fork of [hackernews.el](https://github.com/clarete/hackernews.el) with a modern,
+widget-based interface.
 
-It's simple because it doesn't actually interact with [Hacker
+It doesn't actually interact with [Hacker
 News](https://news.ycombinator.com/).  It uses a HTTP
 [API](https://hacker-news.firebaseio.com/v0) to get the data.
 
