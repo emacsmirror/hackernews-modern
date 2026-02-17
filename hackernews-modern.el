@@ -1,4 +1,4 @@
-;;; hackernews.el --- Hacker News Client -*- lexical-binding: t -*-
+;;; hackernews-modern.el --- Hacker News Client with Modern UI -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2012-2025 The Hackernews.el Authors
 
@@ -7,7 +7,7 @@
 ;; Keywords: comm hypermedia news
 ;; Version: 0.8.0
 ;; Package-Requires: ((emacs "24.3") (visual-fill-column "2.2"))
-;; URL: https://github.com/clarete/hackernews.el
+;; URL: https://git.andros.dev/andros/hackernews-modern.el
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -1117,6 +1117,6 @@ N defaults to `hackernews-items-per-page'."
   (interactive "P")
   (hackernews--load-stories "job" n))
 
-(provide 'hackernews)
+(provide 'hackernews-modern)
 
-;;; hackernews.el ends here
+;;; hackernews-modern.el ends here
