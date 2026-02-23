@@ -6,7 +6,7 @@
 ;; Keywords: comm hypermedia news
 ;; Version: 0.9.0
 ;; Package-Requires: ((emacs "28.1") (visual-fill-column "2.2"))
-;; URL: https://git.andros.dev/andros/hackernews-modern.el
+;; URL: https://git.andros.dev/andros/hackernews-modern-el
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
