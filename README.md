@@ -9,6 +9,13 @@ It doesn't actually interact with [Hacker News](https://news.ycombinator.com/)
 directly. It uses the [Hacker News API](https://hacker-news.firebaseio.com/v0)
 to get the data.
 
+## Differences from hackernews.el
+
+| Feature | hackernews.el | hackernews-modern.el |
+|---------|---------------|----------------------|
+| Request handling | Synchronous, blocking (~10 seconds) | Asynchronous, non-blocking (~2-3 seconds) |
+| Interface | Classic text mode | Widget-based |
+
 ## Interface
 
 The interface fetches stories from six different feeds: top, new, best, ask,

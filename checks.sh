@@ -104,8 +104,7 @@ compile_file() {
     fi
 }
 
-# Compile all hackernews-modern*.el files (queue first as it's a dependency)
-compile_file "hackernews-modern-queue.el"
+# Compile hackernews-modern.el
 compile_file "hackernews-modern.el"
 
 echo ""
