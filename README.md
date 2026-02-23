@@ -46,7 +46,7 @@ argument](https://gnu.org/software/emacs/manual/html_node/emacs/Arguments.html)
 denoting how many stories to fetch. For example,
 <kbd>M-5</kbd><kbd>0</kbd><kbd>g</kbd> reloads the current feed and fetches
 its top 50 stories. With no prefix argument, the value of
-`hackernews-items-per-page` is used.
+`hackernews-modern-items-per-page` is used.
 
 ## Screenshot
 
@@ -79,38 +79,38 @@ Or, to load it immediately at startup:
   :load-path "/path/to/hackernews-modern.el"
   :config
   ;; Optional: enable emoji icons in the header and comment counts
-  (setq hackernews-enable-emojis t)
+  (setq hackernews-modern-enable-emojis t)
   ;; Optional: customize display width (default 80)
-  ;; (setq hackernews-display-width 100)
+  ;; (setq hackernews-modern-display-width 100)
   )
 ```
 
 ## Usage
 
-Run <kbd>M-x</kbd> `hackernews` <kbd>RET</kbd>. The feed is determined by
-`hackernews-default-feed`, which defaults to top stories. Direct commands for
+Run <kbd>M-x</kbd> `hackernews-modern` <kbd>RET</kbd>. The feed is determined by
+`hackernews-modern-default-feed`, which defaults to top stories. Direct commands for
 each feed are also available:
 
-- `hackernews-top-stories`
-- `hackernews-new-stories`
-- `hackernews-best-stories`
-- `hackernews-ask-stories`
-- `hackernews-show-stories`
-- `hackernews-job-stories`
+- `hackernews-modern-top-stories`
+- `hackernews-modern-new-stories`
+- `hackernews-modern-best-stories`
+- `hackernews-modern-ask-stories`
+- `hackernews-modern-show-stories`
+- `hackernews-modern-job-stories`
 
 ## Customization
 
-Run <kbd>M-x</kbd> `customize-group` <kbd>RET</kbd> `hackernews` <kbd>RET</kbd>
+Run <kbd>M-x</kbd> `customize-group` <kbd>RET</kbd> `hackernews-modern` <kbd>RET</kbd>
 to list all available options.
 
 Key options:
 
-- `hackernews-items-per-page` (default `20`): Number of stories to fetch per
+- `hackernews-modern-items-per-page` (default `20`): Number of stories to fetch per
   page.
-- `hackernews-default-feed` (default `"top"`): Feed to load on startup.
-- `hackernews-display-width` (default `80`): Maximum content width. Content is
+- `hackernews-modern-default-feed` (default `"top"`): Feed to load on startup.
+- `hackernews-modern-display-width` (default `80`): Maximum content width. Content is
   centered automatically when `visual-fill-column` is installed.
-- `hackernews-enable-emojis` (default `nil`): Show emoji icons in feed buttons
+- `hackernews-modern-enable-emojis` (default `nil`): Show emoji icons in feed buttons
   and comment counts.
 
 ## License
