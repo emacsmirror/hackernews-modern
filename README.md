@@ -54,35 +54,67 @@ its top 50 stories. With no prefix argument, the value of
 
 ## Installation
 
-### Manual
+### use-package with :vc (Emacs 29+)
 
-Clone the repository and place `hackernews-modern.el` in a directory on your
-`load-path`, then add to your `user-init-file`:
-
-```el
-(autoload 'hackernews-modern "hackernews-modern" nil t)
-```
-
-Or, to load it immediately at startup:
+Recommended method for Emacs 29 and later:
 
 ```el
-(require 'hackernews-modern)
-```
-
-### use-package
-
-```el
+;; Optional but recommended for centering content
 (use-package visual-fill-column
   :ensure t)
 
 (use-package hackernews-modern
-  :load-path "/path/to/hackernews-modern.el"
+  :vc (:url "https://git.andros.dev/andros/hackernews-modern-el"
+       :rev :newest)
   :config
   ;; Optional: enable emoji icons in the header and comment counts
   (setq hackernews-modern-enable-emojis t)
   ;; Optional: customize display width (default 80)
   ;; (setq hackernews-modern-display-width 100)
   )
+```
+
+### use-package with :load-path
+
+For manual installation or Emacs < 29:
+
+```el
+(use-package visual-fill-column
+  :ensure t)
+
+(use-package hackernews-modern
+  :load-path "/path/to/hackernews-modern-el"
+  :config
+  ;; Optional: enable emoji icons in the header and comment counts
+  (setq hackernews-modern-enable-emojis t)
+  ;; Optional: customize display width (default 80)
+  ;; (setq hackernews-modern-display-width 100)
+  )
+```
+
+### Manual
+
+Clone the repository and place the files in a directory on your `load-path`:
+
+```bash
+git clone https://git.andros.dev/andros/hackernews-modern-el.git
+```
+
+Then add to your `user-init-file`:
+
+```el
+;; Add directory to load-path
+(add-to-list 'load-path "/path/to/hackernews-modern-el")
+
+;; Load on demand
+(autoload 'hackernews-modern "hackernews-modern" nil t)
+```
+
+Or, to load it immediately at startup:
+
+```el
+(add-to-list 'load-path "/path/to/hackernews-modern-el")
+(require 'hackernews-modern)
 ```
 
 ## Usage
