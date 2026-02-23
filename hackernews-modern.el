@@ -32,6 +32,7 @@
 (require 'cus-edit)
 (require 'format-spec)
 (require 'url)
+(require 'json)
 (require 'widget)
 (require 'wid-edit)
 (require 'cl-lib)
