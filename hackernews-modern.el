@@ -389,7 +389,8 @@ This is intended as an :annotation-function in
   "Retrieve items associated with current buffer asynchronously.
 Calls CALLBACK when all items have been fetched.
 Uses parallel queue system for non-blocking, fast downloads."
-  (let* ((reg    (hackernews-modern--get :register))
+  (let* ((target-buffer (current-buffer))
+         (reg    (hackernews-modern--get :register))
          (nitem  (hackernews-modern--get :nitem))
          (offset (car reg))
          (ids    (cdr reg))
@@ -404,10 +405,12 @@ Uses parallel queue system for non-blocking, fast downloads."
      item-ids
      hackernews-modern-api-format
      (lambda (items)
-       ;; Store items in buffer state
-       (hackernews-modern--put :items items)
-       ;; Call completion callback
-       (funcall callback)))))
+       ;; Execute in the correct buffer context
+       (with-current-buffer target-buffer
+         ;; Store items in buffer state
+         (hackernews-modern--put :items items)
+         ;; Call completion callback
+         (funcall callback))))))
 
 ;;;; VIEW ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
