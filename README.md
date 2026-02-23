@@ -3,6 +3,8 @@
 Fork of [hackernews.el](https://github.com/clarete/hackernews.el) with a modern,
 widget-based interface.
 
+![screenshot](Screenshot.png)
+
 Requires Emacs 28.1 or later.
 
 It doesn't actually interact with [Hacker News](https://news.ycombinator.com/)
@@ -54,10 +56,6 @@ denoting how many stories to fetch. For example,
 <kbd>M-5</kbd><kbd>0</kbd><kbd>g</kbd> reloads the current feed and fetches
 its top 50 stories. With no prefix argument, the value of
 `hackernews-modern-items-per-page` is used.
-
-## Screenshot
-
-![screenshot](Screenshot.png)
 
 ## Installation
 
