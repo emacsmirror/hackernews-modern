@@ -150,6 +150,10 @@ Key options:
 - `hackernews-modern-enable-emojis` (default `nil`): Show emoji icons in feed buttons
   and comment counts.
 
+## Contributing
+
+Contributions are welcome! Please see the [contribution guidelines](https://git.andros.dev/andros/contribute) for instructions on how to submit issues or pull requests.
+
 ## License
 
 Copyright (C) 2012-2025 The Hackernews.el Authors
