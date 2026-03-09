@@ -162,8 +162,6 @@ Contributions are welcome! Please see the [contribution guidelines](https://git.
 
 ## License
 
-Copyright (C) 2012-2025 The Hackernews.el Authors
-
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
