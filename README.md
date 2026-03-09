@@ -59,6 +59,12 @@ its top 50 stories. With no prefix argument, the value of
 
 ## Installation
 
+### MELPA
+
+```
+M-x package-install RET hackernews-modern RET
+```
+
 ### use-package with :vc (Emacs 29+)
 
 Recommended method for Emacs 29 and later:
